@@ -58,7 +58,9 @@
       padding: 21px 0;
     }
 
-    .header--scrolling .logo-full,.h-search,.burger-menu {
+    .header--scrolling .logo-full,
+    .h-search,
+    .burger-menu {
       opacity: 0;
     }
 
@@ -76,6 +78,12 @@
     @media screen and (max-width: 991px) {
 
       .header nav {
+        transform: translate3d(100%, 0, 0);
+        visibility: hidden;
+      }
+
+      .h-search,
+      .h-call-wrap {
         transform: translate3d(100%, 0, 0);
         visibility: hidden;
       }
@@ -340,7 +348,7 @@
               <li><a href="#">EN</a></li>
             </ul>
     
-            <div class="header-link__call hide-pc js-active-call">
+            <div class="header-link__call hide-pc-flex js-active-call">
               <svg height="22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                    viewBox="0 0 384 384" style="enable-background: new 0 0 384 384;" xml:space="preserve">
                       <path d="M353.188,252.052c-23.51,0-46.594-3.677-68.469-10.906c-10.719-3.656-23.896-0.302-30.438,6.417l-43.177,32.594
@@ -507,7 +515,7 @@
                   <a href="#option-2" data-name="option-2">СЕЧЕНИЕ</a>
                 </li>
                 <li class="tab__link">
-                  <a href="#option-3" data-name="option-3">МЕТАЛ</a>
+                  <a href="#option-3" data-name="option-3">МЕТАЛЛ</a>
                 </li>
                 <li class="tab__link">
                   <a href="#option-3" data-name="option-4">ДСП</a>
@@ -558,7 +566,7 @@
                   </div>
                 </div>
                 <div class="accordion__item">
-                  <span>МЕТАЛ</span>
+                  <span>МЕТАЛЛ</span>
       
                   <div id="option-3" class="tab__content">
                       <a href="#modal-form" class="open-modal"><img data-src="img/components-c-1.png" alt="">
