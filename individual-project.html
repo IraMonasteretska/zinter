@@ -488,27 +488,69 @@
           </h2>
           <p>Vulputate velit esse molestie consequat vel illum dolore eu feugiat</p>
       
-          <form action="">
-            <input type="text" name="name" placeholder="Ваше имя*">
-            <input type="tel" name="tel" id="contact-tel" placeholder="Ваш телефон*">
-            <input type="email" name="email" id="contact-email" placeholder="Ваш  e-mail*">
-            <input type="text" name="comment" id="contact-comment" placeholder="Ваш  комментарий">
-            <div class="form-row">
-              
-              <input type="file" name="file" id="file" class="inputFile" />
-              <label for="file" class="labelFile">
-                <div class="svg"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-           width="85.5px" height="155px" viewBox="0 0 85.5 155" enable-background="new 0 0 85.5 155" xml:space="preserve">
-      <polygon fill-rule="evenodd" clip-rule="evenodd" fill="#333333" points="85.5,1 85.5,155 0.5,155 0.5,81 17.5,81 17.5,138 
-          68.5,138 68.5,18 39.5,18 39.5,115 45.5,115 45.5,35 62.5,35 62.5,132 23.5,132 23.5,1 "/>
-      </svg>
-      </div><span> Прикрепить файл</span>
-              </label>
       
-              <input type="submit" value="отправить">
+          <form action="/individual-projects#wpcf7-f417-o1" method="post" class="wpcf7-form" enctype="multipart/form-data"
+            novalidate="novalidate">
+            <div style="display: none;">
+              <input type="hidden" name="_wpcf7" value="417">
+              <input type="hidden" name="_wpcf7_version" value="5.1.9">
+              <input type="hidden" name="_wpcf7_locale" value="ru_RU">
+              <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f417-o1">
+              <input type="hidden" name="_wpcf7_container_post" value="0">
             </div>
+            <div style="display:none">
+              <div class="wpcf7-response-output wpcf7-display-none" aria-hidden="true"></div>
+            </div>
+            <span class="wpcf7-form-control-wrap user-name"><input type="text" name="user-name" value="" size="40"
+                maxlength="100" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true"
+                aria-invalid="false" placeholder="Ваше имя*"></span>
+            <span class="wpcf7-form-control-wrap tel"><input type="tel" name="tel" value="" size="40" maxlength="20"
+                class="wpcf7-form-control wpcf7-text wpcf7-tel wpcf7-validates-as-required wpcf7-validates-as-tel"
+                id="contact-tel" aria-required="true" aria-invalid="false" placeholder="Ваш телефон*"></span>
+            <span class="wpcf7-form-control-wrap email"><input type="email" name="email" value="" size="40" maxlength="100"
+                class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email"
+                id="contact-email" aria-required="true" aria-invalid="false" placeholder="Ваш email*"></span>
+            <span class="wpcf7-form-control-wrap comment"><input type="text" name="comment" value="" size="40"
+                maxlength="1000" class="wpcf7-form-control wpcf7-text" id="contact-comment" aria-invalid="false"
+                placeholder="Ваш комментарий"></span>
+            <div class="attached-files" style="display: none;">
+              <div class="attached-files__title">
+                <p>Прикрепленные файлы:</p>
+              </div>
+              <div class="attached-files__list"></div>
+              <div class="attached-files__cross">&nbsp;</div>
+            </div>
+            <div class="form-row">
+              <div id="mfcf7_zl_multifilecontainer"><span class="mfcf7-zl-multiline-sample" style="display:none">
+                  <p class="wpcf7-form-control-wrap file"><input type="file" name="file[]" value="Upload" size="40"
+                      class="wpcf7-form-control wpcf7-multilinefile inputFile" id="file" multiple="multiple"
+                      aria-invalid="false" data-multiple-caption="прикрепленных файлов {count}"> <span
+                      class="mfcf7-zl-multifile-name"></span><a href="javascript:void(0);" class="mfcf7_zl_delete_file"><span
+                        class="delete-file" aria-hidden="true">❌</span></a></p>
+                </span></div><span class="wpcf7-form-control-wrap file"></span><input type="button"
+                class="button button-primary qbutton inputFile" data-multiple-caption="прикрепленных файлов {count}"
+                href="javascript:void(0);" id="mfcf7_zl_add_file" value="Upload">
+              <label for="file" class="labelFile">
+                <div class="svg">
+                  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                    y="0px" width="85.5px" height="155px" viewBox="0 0 85.5 155" enable-background="new 0 0 85.5 155"
+                    xml:space="preserve">
+                    <polygon fill-rule="evenodd" clip-rule="evenodd" fill="#333333" points="85.5,1 85.5,155 0.5,155 0.5,81 17.5,81 17.5,138
+       68.5,138 68.5,18 39.5,18 39.5,115 45.5,115 45.5,35 62.5,35 62.5,132 23.5,132 23.5,1 "></polygon>
+                  </svg>
+                </div>
+                <span> Прикрепить файл</span>
+              </label>
+              <span class="wpcf7-form-control-wrap mail-check"><span class="wpcf7-form-control wpcf7-acceptance invert"><span
+                    class="wpcf7-list-item"><input type="checkbox" name="mail-check" value="1" aria-invalid="false"
+                      checked="checked" class="mail-check"></span></span></span>
+              <input type="submit" value="Отправить">
+            </div>
+            <span class="wpcf7-form-control-wrap product-name"><input type="hidden" name="product-name"
+                value="Индивидуальные проекты" size="40" class="wpcf7-form-control wpcf7dtx-dynamictext wpcf7-dynamichidden"
+                aria-invalid="false"></span>
           </form>
-         
+      
         </div>
       </section>
       <!-- End contact-us section -->      <!-- End contact-us -->
